@@ -1,0 +1,20 @@
+{
+  "name": "react-spinner",
+  "version": "1.0.0",
+  "description": "Spinners library for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Askadias/react-spinner.git"
+  },
+  "keywords": ["react", "spinner"],
+  "author": "Kast Askadias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Askadias/react-spinner/issues"
+  },
+  "homepage": "https://github.com/Askadias/react-spinner#readme"
+}
