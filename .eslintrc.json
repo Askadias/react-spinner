@@ -1,26 +1,127 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "semi": [
+      "error",
+      "always"
     ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
     ],
-    "rules": {
-    }
+    "curly": [
+      2,
+      "multi-line"
+    ],
+    "max-len": [
+      1,
+      180,
+      4
+    ],
+    "new-cap": [
+      1,
+      {
+        "capIsNew": false
+      }
+    ],
+    "no-console": 0,
+    "no-debugger": 1,
+    "block-spacing": 0,
+    "no-underscore-dangle": 0,
+    "prefer-const": 1,
+    "comma-dangle": [
+      2,
+      "only-multiline"
+    ],
+    "no-restricted-syntax": 0,
+    "indent": 0,
+    "quotes": [
+      1,
+      "single"
+    ],
+    "prefer-arrow-callback": 1,
+    "object-curly-spacing": 0,
+    "class-methods-use-this": 0,
+    "no-unused-vars": [
+      2,
+      {
+        "args": "none"
+      }
+    ],
+    "no-trailing-spaces": [
+      2,
+      {
+        "skipBlankLines": true
+      }
+    ],
+    "no-prototype-builtins": 0,
+    "no-plusplus": 0,
+    "no-continue": 0,
+    "require-atomic-updates": 0,
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "brace-style": [
+      2,
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "spaced-comment": 0,
+    "object-curly-newline": 0,
+    "prefer-destructuring": 0,
+    "function-paren-newline": 0,
+    "id-length": 0,
+    "import/first": 0,
+    "comma-spacing": [
+      2,
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "padded-blocks": [
+      1,
+      {
+        "blocks": "never",
+        "switches": "never"
+      }
+    ],
+    "space-before-blocks": [
+      1,
+      "always"
+    ],
+    "linebreak-style": [
+      0
+    ]
+  }
 }
