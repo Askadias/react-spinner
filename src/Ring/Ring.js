@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './styles.css';
 
-const Ring = props => (
+const Ring = () => (
   <>
-    <style>{styles}</style>
+    <style>{`${styles}`}</style>
     <div className="lds-ring">
       <div />
       <div />

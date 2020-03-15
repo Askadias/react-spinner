@@ -9,7 +9,9 @@
     "prebuild": "rimraf dist",
     "build": "rollup -c",
     "lint": "eslint .",
-    "lint:fix": "prettier-eslint $PWD'/**/*.js' --write"
+    "lint:fix": "prettier-eslint $PWD'/**/*.js' --write",
+    "storybook": "start-storybook -p 9001 -c storybook",
+    "storybook:build": "build-storybook -c storybook"
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
@@ -40,6 +42,13 @@
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-knobs": "^5.3.17",
+    "@storybook/addon-notes": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/react": "^5.3.17",
+    "@storybook/theming": "^5.3.17",
+    "babel-loader": "^8.0.6",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
@@ -51,6 +60,8 @@
     "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "prettier-eslint-cli": "^5.0.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.0.6",
     "rollup-plugin-babel": "^4.4.0",

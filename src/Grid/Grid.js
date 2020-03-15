@@ -1,19 +1,19 @@
 import React from 'react';
 import styles from './styles.css';
 
-const Grid = props => (
+const Grid = () => (
   <>
-    <style>{styles}</style>
+    <style>{`${styles}`}</style>
     <div className="lds-grid">
-      <div style={{ backgroundColor: props.color }} />
-      <div style={{ backgroundColor: props.color }} />
-      <div style={{ backgroundColor: props.color }} />
-      <div style={{ backgroundColor: props.color }} />
-      <div style={{ backgroundColor: props.color }} />
-      <div style={{ backgroundColor: props.color }} />
-      <div style={{ backgroundColor: props.color }} />
-      <div style={{ backgroundColor: props.color }} />
-      <div style={{ backgroundColor: props.color }} />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
     </div>
   </>
 );

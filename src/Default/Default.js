@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from '../Ring/styles.css';
+import styles from './styles.css';
 
-const Default = props => (
+const Default = () => (
   <>
-    <style>{styles}</style>
+    <style>{`${styles}`}</style>
     <div className="lds-default">
       <div />
       <div />

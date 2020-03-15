@@ -1,8 +1,14 @@
 import React from 'react';
-import { Grid } from 'react-spinner';
+import { Default, Grid, Ring } from 'react-spinner';
 
 function App() {
-  return <Grid color="grey" />;
+  return (
+    <>
+      <Grid />
+      <Default />
+      <Ring />
+    </>
+  );
 }
 
 export default App;
