@@ -1,12 +1,12 @@
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
-import pkg from './package.json';
+import { string } from 'rollup-plugin-string';
 
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-  input: pkg.main,
+  input: 'src/index.js',
   external: ['react'],
   output: [
     {
@@ -30,6 +30,9 @@ export default {
     resolve(),
     babel({
       exclude: 'node_modules/**'
+    }),
+    string({
+      include: '**/*.css'
     }),
     production && terser()
   ]

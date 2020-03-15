@@ -2,7 +2,9 @@
   "name": "react-spinner",
   "version": "1.0.0",
   "description": "Spinners library for React",
-  "main": "src/index.js",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "sideEffects": false,
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
@@ -53,7 +55,15 @@
     "rollup": "^2.0.6",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-string": "^3.0.0",
     "rollup-plugin-terser": "^5.3.0"
   },
-  "dependencies": {}
+  "peerDependencies": {
+    "react": ">=16.2",
+    "prop-types": ">=15.5.2"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=8"
+  }
 }
