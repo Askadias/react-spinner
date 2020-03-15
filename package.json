@@ -2,15 +2,17 @@
   "name": "react-spinner",
   "version": "1.0.0",
   "description": "Spinners library for React",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint **/*.js",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "lint": "eslint .",
     "lint:fix": "prettier-eslint $PWD'/**/*.js' --write"
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
-      "yarn lint:fix", "git add"
+      "yarn lint:fix",
+      "git add"
     ]
   },
   "husky": {
@@ -33,6 +35,9 @@
   },
   "homepage": "https://github.com/Askadias/react-spinner#readme",
   "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
@@ -43,6 +48,12 @@
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
-    "prettier-eslint-cli": "^5.0.0"
-  }
+    "prettier-eslint-cli": "^5.0.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.0.6",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.3.0"
+  },
+  "dependencies": {}
 }
